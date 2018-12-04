@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-include ClassicUserAccounts/static *
+recursive-include ClassicUserAccounts/templates *
+recursive-include ClassicUserAccounts/miscellaneous *
+
