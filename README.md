@@ -1,9 +1,25 @@
-Django Classic User Accounts
--------
-Detailed documentation is in the "docs" directory.
+# Django Classic User Accounts
 
-Quick
------------
+[![GitHub forks](https://img.shields.io/github/forks/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/network) [![GitHub issues](https://img.shields.io/github/issues/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/issues) [![GitHub stars](https://img.shields.io/github/stars/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/stargazers) [![GitHub license](https://img.shields.io/github/license/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account)
+
+
+#### Features
+  - Type some Markdown on the left
+  - Sing up
+  - Email confirmation
+  - Extended user model
+  - Profile picture
+  - Password reset
+  - Account management (update account settings and change password)
+  - Custom `User` model support
+
+### Requirements
+  - Django 2.0 +
+  - Python 3.5, or 3.6
+
+### Quick installation
+
+
 `1. Add "ClassicUserAccounts" to your INSTALLED_APPS setting like this::`
 ```
     INSTALLED_APPS = [
@@ -60,7 +76,7 @@ Quick
         'skin-green-light'
     ]
 
-    You have add "ROLE_BASED_SKIN" in your settings file like this::
+    You have to add "ROLE_BASED_SKIN" in your settings.py file like this::
 
     ROLE_BASED_SKIN = [
         {'role': 'Admin', 'skin_name': 'skin-red'},
@@ -77,4 +93,4 @@ Quick
 
 8. Run `python manage.py migrate` to extend django user model.
 
-`9. Start the development server and visit http://127.0.0.1:8000/admin/` to manage user profile (you'll need the Admin app enabled).
+`9. Start the development server and visit http://127.0.0.1:8000/admin/` to manage user profile.
