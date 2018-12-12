@@ -1,6 +1,7 @@
 # Django Classic User Accounts
 
 [![GitHub forks](https://img.shields.io/github/forks/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/network) [![GitHub issues](https://img.shields.io/github/issues/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/issues) [![GitHub stars](https://img.shields.io/github/stars/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/stargazers) [![GitHub license](https://img.shields.io/github/license/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account)
+[![GitHub license](https://img.shields.io/badge/Donate-%20-blue.svg?style=for-the-badge)](https://www.payumoney.com/paybypayumoney/#/204EBFEA02A716BF0752E79A5D643FF2)
 
 
 #### Features
