@@ -1,5 +1,6 @@
 # Django Classic User Accounts
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fec9ff41aee44257ac2f4da4b7f8b9db)](https://app.codacy.com/app/sumankumar72/django-classic-user-account?utm_source=github.com&utm_medium=referral&utm_content=sumankumar72/django-classic-user-account&utm_campaign=Badge_Grade_Dashboard)
 [![GitHub forks](https://img.shields.io/github/forks/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/network) [![GitHub issues](https://img.shields.io/github/issues/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/issues) [![GitHub stars](https://img.shields.io/github/stars/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/stargazers) [![GitHub license](https://img.shields.io/github/license/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account) [![GitHub license](https://img.shields.io/badge/This%20month%20downloads-4864%2B-brightgreen.svg)](https://github.com/sumankumar72/django-classic-user-account) [![GitHub license](https://img.shields.io/badge/Total%20downloads-9955%2B-brightgreen.svg)](https://github.com/sumankumar72/django-classic-user-account)
 
 
