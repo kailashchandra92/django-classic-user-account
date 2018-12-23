@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth import login, authenticate
 # from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.forms import PasswordChangeForm, PasswordResetForm, AuthenticationForm
+from django.contrib.auth.forms import PasswordChangeForm, PasswordResetForm
 from django.shortcuts import render, redirect
 from .forms import RegistrationForm
 from django.conf import settings
