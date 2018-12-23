@@ -10,7 +10,6 @@ SKINS = ('skin-blue', 'skin-black', 'skin-red', 'skin-yellow', 'skin-purple', 's
 
 
 class ClassicUserAccountsMiddleWare(BaseMiddleware):
-	
 	@classmethod
 	def process_request(self, request):
 		try:
