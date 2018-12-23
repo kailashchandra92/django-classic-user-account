@@ -45,5 +45,6 @@ class ClassicUserAccountsMiddleWare(BaseMiddleware):
 				else:
 					request.THEME_NAME = 'default-theme/'
 
-		except:
+		except Exception as ex:
+			print(str(ex))
 			request.site_name = ''

@@ -52,7 +52,6 @@ if appropriate.
 
     Fixes #88
 
-
 ## Coding style
 
 When writing code to be included in django-user-accounts keep our style in mind:
