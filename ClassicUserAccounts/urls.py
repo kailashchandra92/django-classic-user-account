@@ -1,6 +1,5 @@
 from __future__ import unicode_literals
-from django.urls import path, include
-from django.contrib.auth import urls
+from django.urls import path
 from django.contrib.auth import views as auth_views
 from . import views
 from django.conf import settings

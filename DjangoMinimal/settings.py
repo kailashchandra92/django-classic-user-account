@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'sorl.thumbnail',
-    'DjangoClassicLeads'
 ]
 THUMBNAIL_DEBUG = True
 
@@ -145,5 +144,5 @@ ROLE_BASED_SKIN = [
 ]
 USER_BASED_THEME = False
 THEME_NAME = 'default-theme'
-THEME_NAME = 'theme-1'
-THEME_NAME = 'theme-2'
+#THEME_NAME = 'theme-1'
+#THEME_NAME = 'theme-2'

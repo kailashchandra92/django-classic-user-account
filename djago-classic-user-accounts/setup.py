@@ -15,7 +15,7 @@ setup(
     license='BSD License',  # example license
     description='A extended user profile for Django.',
     long_description=README,
-    url='https://www.example.com/',
+    url='http://sumanshandilya.com/',
     author='Suman Kumar',
     author_email='sumankumar72@gmail.com',
     install_requires=[

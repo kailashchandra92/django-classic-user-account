@@ -1,6 +1,0 @@
-include LICENSE
-include README.rst
-recursive-include DjangoClassicLeads/static *
-recursive-include DjangoClassicLeads/templates *
-recursive-include DjangoClassicLeads/miscellaneous *
-
