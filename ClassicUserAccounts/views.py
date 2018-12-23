@@ -7,13 +7,6 @@ from django.shortcuts import render, redirect
 from .forms import RegistrationForm
 from django.conf import settings
 
-
-# def login(request):
-# 	if request.method == 'POST':
-# 		pass
-# 	else:
-# 		return render(request, request.THEME_NAME + 'registration/signup.html', {'form': form})
-
 def signup(request):
 	if request.method == 'POST':
 		form = RegistrationForm(request.POST)
