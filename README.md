@@ -1,10 +1,12 @@
 # Django Classic User Accounts
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/fec9ff41aee44257ac2f4da4b7f8b9db)](https://app.codacy.com/app/sumankumar72/django-classic-user-account?utm_source=github.com&utm_medium=referral&utm_content=sumankumar72/django-classic-user-account&utm_campaign=Badge_Grade_Dashboard)
-[![GitHub forks](https://img.shields.io/github/forks/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/network) [![GitHub issues](https://img.shields.io/github/issues/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/issues) [![GitHub stars](https://img.shields.io/github/stars/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/stargazers) [![GitHub license](https://img.shields.io/github/license/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account) [![GitHub license](https://img.shields.io/badge/This%20month%20downloads-4864%2B-brightgreen.svg)](https://github.com/sumankumar72/django-classic-user-account) [![GitHub license](https://img.shields.io/badge/Total%20downloads-9955%2B-brightgreen.svg)](https://github.com/sumankumar72/django-classic-user-account)
+[![GitHub forks](https://img.shields.io/github/forks/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/network) [![GitHub issues](https://img.shields.io/github/issues/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/issues) [![GitHub stars](https://img.shields.io/github/stars/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/stargazers) [![GitHub license](https://img.shields.io/github/license/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account) [![GitHub license](https://img.shields.io/badge/This%20month%20downloads-5089%2B-brightgreen.svg)](https://github.com/sumankumar72/django-classic-user-account) [![GitHub license](https://img.shields.io/badge/Total%20downloads-101%2B-brightgreen.svg)](https://github.com/sumankumar72/django-classic-user-account)
+[![GitHub license](https://img.shields.io/badge/Slack-%20-%23e01563.svg)](https://sumanshandilya.slack.com)
+
 
 #### Features
-- Type some Markdown on the left
+- Login
 - Sing up
 - Email confirmation
 - Extended user model
@@ -13,11 +15,11 @@
 - Account management (update account settings and change password)
 - Custom `User` model support
 
-### Requirements
+#### Requirements
 - Django 2.0 +
 - Python 3.5, or 3.6
 
-### Quick installation
+#### Quick installation
 
 
 `1. Add "ClassicUserAccounts" to your INSTALLED_APPS setting like this::`
@@ -94,3 +96,35 @@
 `8. Run python manage.py migrate to extend django user model.`
 
 `9. Start the development server and visit http://127.0.0.1:8000/admin/ to manage user profile.`
+
+#### Base Template Setup
+1. Create `site_base.html` file in your project templates directory. `site_base.html` have below content.
+```
+{% extends request.THEME_NAME|add:'classic_site_base.html' %}
+{% load static %}
+
+{% block side_menu %}
+`Place your Side menu here `
+
+<li>
+    <a href="{% url 'logout' %}">
+        <i class="fa fa-lock"></i> <span>Logout</span>
+        <span class="pull-right-container"></span>
+    </a>
+</li>
+{% endblock %}
+```
+2. `classic_site_base.html` have these blocks where you can place html content.
+```
+{% block title %} {% endblock %} Which is placed inside the title tag.
+
+{% block extra_style_block %}{% endblock %} Placed in bottom of </head> tag.
+
+{% block extra_nav_item %} {% endblock %} Placed on the top right header nav.
+
+{% block side_menu %} {% endblock %} Side navigation menu.
+
+{% block content %} {% endblock %} Content block which placed in body tag.
+
+{% block extra_script_block %} {% endblock %} Placed in the bottom of </body> tag.
+```
