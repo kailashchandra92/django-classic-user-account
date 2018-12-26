@@ -3,4 +3,3 @@ python:
   - 3.5
 install:
   - pip install unittest2
-script: python forvideo.py
