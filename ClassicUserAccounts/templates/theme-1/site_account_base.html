@@ -11,16 +11,16 @@
     <title>SoftMaterial admin - Log in </title>
 
 	<!-- Bootstrap 4.1-->
-	<link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/assets/vendor_components/bootstrap/css/bootstrap.css ">
+	<link rel="stylesheet" href="{% static request.THEME_NAME|add:'assets/vendor_components/bootstrap/css/bootstrap.css' %} ">
 
 	<!-- Bootstrap extend-->
-	<link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/bootstrap-extend.css">
+	<link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/bootstrap-extend.css' %}">
 
 	<!-- Theme style -->
-	<link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/master_style.css">
+	<link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/master_style.css' %}">
 
 	<!-- SoftMaterial admin skins -->
-	<link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/skins/_all-skins.css">
+	<link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/skins/_all-skins.css' %}">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,7 +30,7 @@
 	<![endif]-->
 
 </head>
-<body class="hold-transition bg-img" style="background-image: url(//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/images/gallery/full/6.jpg)" data-overlay="4">
+<body class="hold-transition bg-img" style="background-image: url({% static request.THEME_NAME|add:'images/gallery/full/6.jpg' %})" data-overlay="4">
 
 <div class="container h-p100">
 	{% block content %}
@@ -40,13 +40,13 @@
 
 
 	<!-- jQuery 3 -->
-	<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/assets/vendor_components/jquery-3.3.1/jquery-3.3.1.js"></script>
+	<script src="{% static request.THEME_NAME|add:'assets/vendor_components/jquery-3.3.1/jquery-3.3.1.js' %}"></script>
 
 	<!-- popper -->
-	<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/assets/vendor_components/popper/popper.min.js"></script>
+	<script src="{% static request.THEME_NAME|add:'assets/vendor_components/popper/popper.min.js' %}"></script>
 
 	<!-- Bootstrap 4.1-->
-	<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/assets/vendor_components/bootstrap/js/bootstrap.min.js"></script>
+	<script src="{% static request.THEME_NAME|add:'assets/vendor_components/bootstrap/js/bootstrap.min.js' %}"></script>
 
 </body>
 </html>

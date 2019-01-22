@@ -1,6 +1,5 @@
 # Django Classic User Accounts
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fec9ff41aee44257ac2f4da4b7f8b9db)](https://app.codacy.com/app/sumankumar72/django-classic-user-account?utm_source=github.com&utm_medium=referral&utm_content=sumankumar72/django-classic-user-account&utm_campaign=Badge_Grade_Dashboard)
 [![GitHub forks](https://img.shields.io/github/forks/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/network) [![GitHub issues](https://img.shields.io/github/issues/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/issues) [![GitHub stars](https://img.shields.io/github/stars/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account/stargazers) [![GitHub license](https://img.shields.io/github/license/sumankumar72/django-classic-user-account.svg)](https://github.com/sumankumar72/django-classic-user-account) [![GitHub license](https://img.shields.io/badge/This%20month%20downloads-5089%2B-brightgreen.svg)](https://github.com/sumankumar72/django-classic-user-account) [![GitHub license](https://img.shields.io/badge/Total%20downloads-10K%2B-brightgreen.svg)](https://github.com/sumankumar72/django-classic-user-account)
 [![GitHub license](https://img.shields.io/badge/Slack-%20-%23e01563.svg)](https://sumanshandilya.slack.com)
 
@@ -128,3 +127,27 @@
 
 {% block extra_script_block %} {% endblock %} Placed in the bottom of </body> tag.
 ```
+
+#### Photos
+
+` Login Page `
+![N|Solid](http://drive.google.com/uc?export=view&id=1kksCLiixQRSAixmk47-0cC1J5ZKh1BkQ)
+
+`Signup Page`
+![N|Solid](http://drive.google.com/uc?export=view&id=11v8weKPZzITR_IHeQCeBVD3XQiKRgcKv)
+
+`Reset Password Page`
+![N|Solid](http://drive.google.com/uc?export=view&id=1pdouy9cKSQ0vqx3FgMsrmue-Rf8yRtCW)
+
+`Dashboard Page `
+![N|Solid](http://drive.google.com/uc?export=view&id=1N74ZJConUqYz4tRBopYp9_FWextLmbD6)
+
+`Django Admin Dashboard`
+![N|Solid](http://drive.google.com/uc?export=view&id=1dsn4VxjHr8tQBW3KxPELjuHZx4R_y44R)
+
+`User model table view`
+![N|Solid](http://drive.google.com/uc?export=view&id=1OvG9q9siIOS7x30C4lOoOnUH_DcM7ilS)
+
+`Django Model Edit View`
+![N|Solid](http://drive.google.com/uc?export=view&id=1AyeeRYzAXISMccArxmVHweAEmqtwEJwn)
+

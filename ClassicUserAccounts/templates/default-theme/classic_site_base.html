@@ -9,30 +9,30 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/bootstrap/css/bootstrap.min.css' %}">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/font-awesome/css/font-awesome.min.css' %}">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/Ionicons/css/ionicons.min.css' %}">
 
-  <link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/select2/select2.min.css">
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/select2/select2.min.css' %}">
 
   <!-- Theme style -->
-  <link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/AdminLTE.min.css' %}">
 
   <!-- ClassicUserAccount Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/skins/_all-skins.min.css' %}">
   <!-- Morris chart -->
-  <link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/morris.js/morris.css">
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/morris.js/morris.css' %}">
   <!-- jvectormap -->
-  <link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/jvectormap/jquery-jvectormap.css">
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/jvectormap/jquery-jvectormap.css' %}">
   <!-- Date Picker -->
-  <link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/bootstrap-datepicker/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/bootstrap-datepicker/bootstrap-datepicker.min.css' %}">
   <!-- Daterange picker -->
-  <link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/bootstrap-daterangepicker/daterangepicker.css' %}">
   <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="{% static request.THEME_NAME|add:'css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css' %}">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -80,38 +80,229 @@
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          {% block extra_nav_item %}
+          <!-- Messages: style can be found in dropdown.less-->
+          <!--<li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="{% static request.THEME_NAME|add:'img/user2-160x160.jpg' %}" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="{% static request.THEME_NAME|add:'img/user3-128x128.jpg' %}" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        ClassicUserAccount Design Team
+                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="{% static request.THEME_NAME|add:'img/user4-128x128.jpg' %}" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Developers
+                        <small><i class="fa fa-clock-o"></i> Today</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="{% static request.THEME_NAME|add:'img/user3-128x128.jpg' %}" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Sales Department
+                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="{% static request.THEME_NAME|add:'img/user4-128x128.jpg' %}" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Reviewers
+                        <small><i class="fa fa-clock-o"></i> 2 days</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
 
-          {% endblock %}
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 10 notifications</li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                      page and may cause design problems
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-red"></i> 5 new members joined
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-flag-o"></i>
+              <span class="label label-danger">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 9 tasks</li>
+              <li>
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <h3>
+                        Design some buttons
+                        <small class="pull-right">20%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h3>
+                        Create a nice theme
+                        <small class="pull-right">40%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">40% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h3>
+                        Some task I need to do
+                        <small class="pull-right">60%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <h3>
+                        Make beautiful transitions
+                        <small class="pull-right">80%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
+                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">80% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">View all tasks</a>
+              </li>
+            </ul>
+          </li>
 
+        -->
+          <!-- User Account: style can be found in dropdown.less -->
 
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-		{% if request.user.get_avatar %}
-	              {% thumbnail request.user.get_avatar "25x25" as im %}
-        	        <img src="{{ im.url }}" class="user-image" alt="User Image">
-        	      {% endthumbnail %}
-		{% else %}
-	       	        <img src="{{ request.user.get_avatar_url }}" class="user-image" alt="User Image">
-		{% endif %}
+              {% thumbnail request.user.get_avatar "25x25" as im %}
+                <img src="{{ im.url }}" class="float-left rounded-circle" alt="User Image">
+              {% endthumbnail %}
               <span class="hidden-xs">{{request.user.get_full_name}}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-		{% if request.user.get_avatar %}
-		        {% thumbnail request.user.get_avatar "90x90" as im %}
-		          <img src="{{ im.url }}" class="img-circle" alt="User Image">
-		        {% endthumbnail %}
-		{% else %}
-	       	        <img src="{{ request.user.get_avatar_url }}" class="img-circle" alt="User Image">
-		{% endif %}
+                {% thumbnail request.user.get_avatar "90x90" as im %}
+                  <img src="{{ im.url }}" class="float-left rounded-circle" alt="User Image">
+                {% endthumbnail %}
                 <p>
                   {{request.user.get_full_name}}
                   <small>Member since {{request.user.date_joined }}</small>
                 </p>
               </li>
-
+              <!--<li class="user-body">-->
+                <!--<div class="row">-->
+                  <!--<div class="col-xs-4 text-center">-->
+                    <!--<a href="#">Followers</a>-->
+                  <!--</div>-->
+                  <!--<div class="col-xs-4 text-center">-->
+                    <!--<a href="#">Sales</a>-->
+                  <!--</div>-->
+                  <!--<div class="col-xs-4 text-center">-->
+                    <!--<a href="#">Friends</a>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</li>-->
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
@@ -123,6 +314,10 @@
               </li>
             </ul>
           </li>
+          <!-- Control Sidebar Toggle Button -->
+          <!--<li>-->
+            <!--<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>-->
+          <!--</li>-->
         </ul>
       </div>
     </nav>
@@ -134,13 +329,9 @@
       <!-- Sidebar user panel -->
       <div class="user-panel" style="overflow:unset;">
         <div class="pull-left image">
-		{% if request.user.get_avatar %}
           {% thumbnail request.user.get_avatar "45x45" as im %}
-              <img src="{{ im.url }}" class="img-circle" alt="User Image">
+              <img src="{{ im.url }}" class="float-left rounded-circle" alt="User Image">
           {% endthumbnail %}
-	{% else %}
-	       	        <img src="{{ request.user.get_avatar_url }}" class="img-circle" alt="User Image">
-		{% endif %}
         </div>
         <div class="pull-left info">
           <p>{{request.user.get_full_name}}</p>
@@ -413,44 +604,44 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/jquery.min.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/jquery.min.js' %}"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/jquery-ui/jquery-ui.min.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/jquery-ui/jquery-ui.min.js' %}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>
 <!-- Bootstrap 3.3.7 -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/bootstrap.min.js"></script>
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/select2.full.min.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/bootstrap.min.js' %}"></script>
+<script src="{% static request.THEME_NAME|add:'js/select2.full.min.js' %}"></script>
 
 <!-- Morris.js charts -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/raphael.min.js"></script>
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/morris.min.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/raphael.min.js' %}"></script>
+<script src="{% static request.THEME_NAME|add:'js/morris.min.js' %}"></script>
 <!-- Sparkline -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/jquery.sparkline.min.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/jquery.sparkline.min.js' %}"></script>
 <!-- jvectormap -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/jquery-jvectormap-world-mill-en.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/jquery-jvectormap-1.2.2.min.js' %}"></script>
+<script src="{% static request.THEME_NAME|add:'js/jquery-jvectormap-world-mill-en.js' %}"></script>
 <!-- jQuery Knob Chart -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/jquery.knob.min.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/jquery.knob.min.js' %}"></script>
 <!-- daterangepicker -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/moment.min.js"></script>
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/daterangepicker.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/moment.min.js' %}"></script>
+<script src="{% static request.THEME_NAME|add:'js/daterangepicker.js' %}"></script>
 <!-- datepicker -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/bootstrap-datepicker.min.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/bootstrap-datepicker.min.js' %}"></script>
 <!-- Bootstrap WYSIHTML5 -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/bootstrap3-wysihtml5.all.min.js' %}"></script>
 <!-- Slimscroll -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/jquery.slimscroll.min.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/jquery.slimscroll.min.js' %}"></script>
 <!-- FastClick -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/fastclick.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/fastclick.js' %}"></script>
 <!-- ClassicUserAccount App -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/adminlte.min.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/adminlte.min.js' %}"></script>
 <!-- ClassicUserAccount dashboard demo (This is only for demo purposes) -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/dashboard.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/dashboard.js' %}"></script>
 <!-- ClassicUserAccount for demo purposes -->
-<script src="//sumanshandilya.com/dcua/static/{{request.THEME_NAME}}/js/demo.js"></script>
+<script src="{% static request.THEME_NAME|add:'js/demo.js' %}"></script>
 
 <script>
 var mySkins = [

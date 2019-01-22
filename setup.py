@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-classic-user-accounts',
-    version='1.0.24',
+    version='1.0.27',
     packages=find_packages(),
     include_package_data=True,
     license='BSD License',  # example license
@@ -23,6 +23,8 @@ setup(
         'Pillow',
         'sorl-thumbnail',
     ],
+    keywords = ['django theme', 'Extend Django User Model', 'User Model',
+                'theme', 'django theme', 'interface', 'Django Startup Setup'],
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
