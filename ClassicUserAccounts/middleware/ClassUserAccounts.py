@@ -15,6 +15,7 @@ class ClassicUserAccountsMiddleWare(BaseMiddleware):
 		try:
 			if hasattr(settings, 'SITE_NAME'):
 				request.site_name = settings.SITE_NAME
+
 			if request.user.is_authenticated and hasattr(settings, 'ROLE_BASED_SKIN'):
 				my_skin = ''
 				skins = settings.ROLE_BASED_SKIN
@@ -25,6 +26,7 @@ class ClassicUserAccountsMiddleWare(BaseMiddleware):
 						break
 				print(my_skin)
 				request.skin = my_skin
+
 			if request.user.is_authenticated and hasattr(settings, 'USER_BASED_THEME'):
 				if settings.USER_BASED_THEME is True:
 					request.THEME_NAME = request.user.get_theme()+'/'
@@ -35,7 +37,7 @@ class ClassicUserAccountsMiddleWare(BaseMiddleware):
 						else:
 							request.THEME_NAME = 'default-theme/'
 					else:
-						request.THEME_NAME = 'default-theme/'
+						request["THEME_NAME"] = 'default-theme/'
 			else:
 				if hasattr(settings, 'THEME_NAME'):
 					if settings.THEME_NAME is not '':
