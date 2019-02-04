@@ -2,7 +2,7 @@ from django import forms
 from ClassicUserAccounts.models import *
 from django.contrib.auth.models import User
 from ClassicUserAccounts import models
-from django.contrib.auth.forms import ReadOnlyPasswordHashField
+# from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.contrib.auth.models import Group
 
 
@@ -53,7 +53,6 @@ class UserChangeForm(forms.ModelForm):
 	#     # This is done here, rather than on the field, because the
 	#     # field does not have access to the initial value
 	#     return self.initial["password"]
-	
 	def save(self, commit=True):
 		user = super(UserChangeForm, self).save(commit=False)
 		if user.business_email is None or user.business_email == '':

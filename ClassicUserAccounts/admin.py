@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin
+from django.contrib.auth.admin import UserAdmin as um
 from .forms import UserChangeForm, RegistrationForm
 from django.contrib.auth.admin import GroupAdmin
 from django.contrib.auth.models import Group
@@ -10,7 +10,7 @@ admin.site.unregister(Group)
 admin.site.register(Role, GroupAdmin)
 
 
-class UserAdmin(UserAdmin):
+class UserAdmin(um):
     form = UserChangeForm
     add_form = RegistrationForm
     
@@ -50,6 +50,5 @@ class UserAdmin(UserAdmin):
     search_fields = ('email',)
     ordering = ('email',)
     filter_horizontal = ()
-
 
 admin.site.register(User, UserAdmin)

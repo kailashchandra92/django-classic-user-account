@@ -5,7 +5,6 @@ from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import Group
 from django.utils.html import format_html
 from .managers import UserManager
-from django.conf import settings
 
 class Role(Group):
     class Meta:
@@ -113,18 +112,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 				return format_html('<img src="/static/avatar_a.png" style="{}" />'.format(style))
 	avatar_tag.short_description = 'Profile Picture'
 	
-	def get_full_name(self):
-		'''
-		Returns the first_name plus the last_name, with a space in between.
-		'''
-		full_name = '%s %s' % (self.first_name, self.last_name)
-		return full_name.strip()
-	
-	def get_short_name(self):
-		'''
-		Returns the short name for the user.
-		'''
-		return self.first_name
 	
 	def email_user(self, subject, message, from_email=None, **kwargs):
 		'''
@@ -199,7 +186,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 		
 	def __str__(self):  # __unicode__ on Python 2
 		return self.email
-	
 	@property
 	def is_staff(self):
 		return self.is_admin

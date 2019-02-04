@@ -1,19 +1,11 @@
 from django.contrib import messages
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth import login, authenticate
-from django.contrib.admin import AdminSite
 # from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.forms import PasswordChangeForm, PasswordResetForm, AuthenticationForm
+from django.contrib.auth.forms import PasswordChangeForm, PasswordResetForm
 from django.shortcuts import render, redirect
 from .forms import RegistrationForm
 from django.conf import settings
-
-
-# def login(request):
-# 	if request.method == 'POST':
-# 		pass
-# 	else:
-# 		return render(request, request.THEME_NAME + 'registration/signup.html', {'form': form})
 
 def signup(request):
 	if request.method == 'POST':
