@@ -5,6 +5,9 @@ from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import Group
 from django.utils.html import format_html
 from .managers import UserManager
+# from django.contrib.auth import get_user_model
+# User = get_user_model()
+
 
 class Role(Group):
     class Meta:
@@ -189,3 +192,17 @@ class User(AbstractBaseUser, PermissionsMixin):
 	@property
 	def is_staff(self):
 		return self.is_admin
+
+class SoftDeleteModel(models.Model):
+	created_on = models.DateTimeField(auto_now_add=True)
+	# created_by = models.ForeignKey(User, on_delete=models.PROTECT, null=True, blank=True)
+	created_by = models.IntegerField(default=-1)	
+	modified_on = models.DateTimeField(auto_now=True)
+	# modified_by = models.ForeignKey(User, on_delete=models.PROTECT, null=True, blank=True)
+	modified_by = models.IntegerField(default=-1)	
+	is_active = models.BooleanField(default=True)
+	is_deleted = models.BooleanField(default=False)
+	deleted_on = models.DateTimeField(null=True, default=None)
+	
+	class Meta:
+		abstract = True
